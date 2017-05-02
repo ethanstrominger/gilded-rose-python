@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 bin
 obj
 *.sln.DotSettings.user
@@ -5,3 +6,7 @@ obj
 vendor
 .idea
 *.iml
+=======
+.idea
+__pycache__
+>>>>>>> 304ed45... Initial commit
