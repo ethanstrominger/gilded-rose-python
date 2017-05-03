@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Gilded Rose Refactoring Kata
 
 This Kata was originally created by Terry Hughes (http://twitter.com/TerryHughes). It is already on GitHub [here](https://github.com/NotMyself/GildedRose). See also [Bobby Johnson's description of the kata](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/).
@@ -76,7 +75,7 @@ This kata's test tools include
 3. `coverage` to show you how much of your code is being tested.
 
 ```bash
-./test.sh        // runs nosetests --rednose --with-watch --with-coverage for you
+./test.sh        // runs nosetests --cover-branches --with-coverage --rednose --with-watch --cover-erase --cover-html
 ```
 
 The final test, which relates to a new feature, is skipped.  Remove the `@skip` annotation in `gilded-rose-test.py` to enable it.
@@ -120,7 +119,4 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 Your work needs to be completed by 20:00hs.
 
 Just for clarification, an item can never have its Quality increase above 50.
-<<<<<<< HEAD
->>>>>>> 304ed45... Initial commit
-=======
->>>>>>> 3241a91... Update all code and README
+

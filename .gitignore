@@ -1,17 +1,12 @@
-<<<<<<< HEAD
 bin
 obj
 *.sln.DotSettings.user
 .vs
 vendor
 .idea
-<<<<<<< HEAD
 *.iml
-=======
 .idea
 __pycache__
->>>>>>> 304ed45... Initial commit
-=======
-__pycache__
 .coverage
->>>>>>> 3241a91... Update all code and README
+cover
+
