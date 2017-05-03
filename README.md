@@ -55,25 +55,31 @@ I analysed this repo according to the clean code standards on [Better Code Hub](
 =======
 Modified by me from the original, found at https://github.com/istepaniuk/gilded-rose-js-with-tests, in the following ways:
 
-1. It's in Python 3 now.  So, really the only original content is the last half of this README
+0. It's in Python 3 now.  So, really the only original content is the README from "Coding Dojo" on
 
 ## Installing
 
 Clone the repo and cd to the project directory.
-Make sure you have nodejs >= 6 installed
+You should have [Python 3](https://www.python.org/downloads/) and  [pip](https://pip.pypa.io/en/stable/installing/) installed.  Making a new [virtualenv](https://virtualenv.pypa.io/en/stable/) is nice also :)
 
 ```bash
-npm install -g yarn
-npm install
+pip install -r requirements.txt
 ```
 
 ## Running the tests
+
+This kata's test tools include
+
+0. `nosetest` for running your Python tests from the command line
+1. `rednose` for colorizing the test output and making it easier to read
+2. `nosewatch` to re-run tests automatically as you change your code or tests
+3. `coverage` to show you how much of your code is being tested.
+
 ```bash
-yarn test                   \\ run once
-yarn test:watch             \\ run in watch mode
-yarn test:watch:coverage    \\ run in watch mode with coverage reports
+./test.sh        // runs nosetests --rednose --with-watch --with-coverage for you
 ```
 
+The final test, which relates to a new feature, is skipped.  Remove the `@skip` annotation in `gilded-rose-test.py` to enable it.
 
 Coding Dojo
 ===========
@@ -114,4 +120,7 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 Your work needs to be completed by 20:00hs.
 
 Just for clarification, an item can never have its Quality increase above 50.
+<<<<<<< HEAD
 >>>>>>> 304ed45... Initial commit
+=======
+>>>>>>> 3241a91... Update all code and README
