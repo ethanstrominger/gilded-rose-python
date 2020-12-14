@@ -5,7 +5,6 @@ from unittest import TestCase, skip
 
 gilded_rose = GildedRose()
 
-
 class GildedRoseTest(TestCase):
 
     def setUp(self):
@@ -38,7 +37,7 @@ class GildedRoseTest(TestCase):
         self.items.append(Item("Backstage passes to a TAFKAL80ETC concert", 8, 30))
         gilded_rose.update_quality(self.items)
         expected = [
-            {'sell_in': 9, 'quality': 36},
+            {'sell_in': 9, 'quality': 35},
             {'sell_in': 7, 'quality': 32},
         ]
 
@@ -52,7 +51,7 @@ class GildedRoseTest(TestCase):
         self.items.append(Item("Backstage passes to a TAFKAL80ETC concert", 5, 15))
         gilded_rose.update_quality(self.items)
         expected = [
-            {'sell_in': 3, 'quality': 14},
+            {'sell_in': 3, 'quality': 12},
             {'sell_in': 4, 'quality': 18},
         ]
 
@@ -80,7 +79,7 @@ class GildedRoseTest(TestCase):
         self.items.append(Item("Backstage passes to a TAFKAL80ETC concert", 0, 20))
         gilded_rose.update_quality(self.items)
         expected = [
-            {'sell_in': -1, 'quality': 0},
+            {'sell_in': -1, 'quality': 22},
             {'sell_in': -1, 'quality': 0},
         ]
 

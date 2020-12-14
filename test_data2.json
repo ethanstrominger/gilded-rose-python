@@ -1,0 +1,6 @@
+{"delta_quality_tests":
+  { "normal degrades by 1": 4,
+    "degrades by 2 when negative sell in": 3
+    }
+  }
+
